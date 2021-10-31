@@ -40,14 +40,15 @@ li a {
 }
 
 .box {
-    width: 200px;
-    object-fit: contain;
-    object-position: center;
+    width: 250px;
+    height: 200px;
 }
 
 img {
     height: 200px;
-    width: 200px;
+    width: 250px;
+    object-fit: contain;
+    object-position: center;
 }
 
 .boxes {
