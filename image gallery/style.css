@@ -1,11 +1,9 @@
-* {
+body {
     margin: 0;
     padding: 0;
-}
-
-body {
     background-color: black;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 section {
@@ -13,7 +11,8 @@ section {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    margin-top: 30px;
     flex-direction: column;
 }
 
@@ -36,12 +35,14 @@ li {
 li a {
     text-decoration: none;
     font-family: cursive;
+    color: rgb(22, 60, 110);
     font-size: 1.2rem;
 }
 
 .box {
     width: 300px;
     height: 200px;
+    margin: 5px;
 }
 
 img {
@@ -53,7 +54,7 @@ img {
 
 .boxes {
     display: flex;
-    margin-top: 20px;
+    margin-top: 5px;
     flex-direction: row;
     flex-basis: 1;
     flex-wrap: wrap;
