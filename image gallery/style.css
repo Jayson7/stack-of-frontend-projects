@@ -42,13 +42,12 @@ li a {
 .box {
     width: 300px;
     height: 200px;
-    margin: 5px;
 }
 
 img {
     height: 200px;
     width: 300px;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
 }
 
@@ -61,7 +60,7 @@ img {
     width: 100%;
     height: auto;
     justify-content: center;
-    align-items: top;
+    align-items: center;
     /* background-color: aqua; */
 }
 
@@ -70,5 +69,6 @@ img {
 .food,
 .shoe,
 .place {
-    display: none;
+    display: block;
+    margin: 5px;
 }

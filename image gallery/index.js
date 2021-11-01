@@ -9,7 +9,7 @@ var shoes = document.querySelector(".shoes");
 
 // pics
 // food
-var picfood = document.getElementsByClassName(".food");
+var picfood = document.querySelectorAll(".food");
 
 // beauty
 var picbeauty = document.querySelectorAll(".beauty");
@@ -28,60 +28,120 @@ var picshoe = document.querySelectorAll(".shoe");
 // all
 all.addEventListener("click", () => {
     console.log("all");
-    picfood.style.display = "block";
-    picshoe.style.display = "block";
-    picbeauty.style.display = "block";
-    piccloth.style.display = "block";
-    picplace.style.display = "block";
+    picfood.forEach((food) => {
+        food.style.display = "block";
+    });
+    picbeauty.forEach((beauty) => {
+        beauty.style.display = "block";
+    });
+    piccloth.forEach((cloth) => {
+        cloth.style.display = "block";
+    });
+    picplace.forEach((place) => {
+        place.style.display = "block";
+    });
+    picshoe.forEach((shoe) => {
+        shoe.style.display = "block";
+    });
 });
 
 // beautys
 beautys.addEventListener("click", () => {
     console.log("beauty");
-    picfood.style.display = "none";
-    picshoe.style.display = "none";
-    picbeauty.style.display = "block";
-    piccloth.style.display = "none";
-    picplace.style.display = "none";
+    picfood.forEach((food) => {
+        food.style.display = "none";
+    });
+    picbeauty.forEach((beauty) => {
+        beauty.style.display = "block";
+    });
+    piccloth.forEach((cloth) => {
+        cloth.style.display = "none";
+    });
+    picplace.forEach((place) => {
+        place.style.display = "none";
+    });
+    picshoe.forEach((shoe) => {
+        shoe.style.display = "none";
+    });
 });
 
 // clothes
 clothes.addEventListener("click", () => {
     console.log("clothes");
-    picfood.style.display = "none";
-    picshoe.style.display = "none";
-    picbeauty.style.display = "none";
-    piccloth.style.display = "block";
-    picplace.style.display = "none";
+    picfood.forEach((food) => {
+        food.style.display = "none";
+    });
+    picbeauty.forEach((beauty) => {
+        beauty.style.display = "none";
+    });
+    piccloth.forEach((cloth) => {
+        cloth.style.display = "block";
+    });
+    picplace.forEach((place) => {
+        place.style.display = "none";
+    });
+    picshoe.forEach((shoe) => {
+        shoe.style.display = "none";
+    });
 });
 
 // places
 places.addEventListener("click", () => {
-    picfood.style.display = "none";
-    picshoe.style.display = "none";
-    picbeauty.style.display = "none";
-    piccloth.style.display = "none";
-    picplace.style.display = "block";
+    picfood.forEach((food) => {
+        food.style.display = "none";
+    });
+    picbeauty.forEach((beauty) => {
+        beauty.style.display = "none";
+    });
+    piccloth.forEach((cloth) => {
+        cloth.style.display = "none";
+    });
+    picplace.forEach((place) => {
+        place.style.display = "block";
+    });
+    picshoe.forEach((shoe) => {
+        shoe.style.display = "none";
+    });
     console.log("places");
 });
 
 // shoes
 shoes.addEventListener("click", () => {
     console.log("shoes");
-    picfood.style.display = "none";
-    picshoe.style.display = "block";
-    picbeauty.style.display = "none";
-    piccloth.style.display = "none";
-    picplace.style.display = "none";
+    picfood.forEach((food) => {
+        food.style.display = "none";
+    });
+    picbeauty.forEach((beauty) => {
+        beauty.style.display = "none";
+    });
+    piccloth.forEach((cloth) => {
+        cloth.style.display = "none";
+    });
+    picplace.forEach((place) => {
+        place.style.display = "none";
+    });
+    picshoe.forEach((shoe) => {
+        shoe.style.display = "block";
+    });
 });
 
 // food
 
 foods.addEventListener("click", () => {
-    picfood.style.display = "block";
-    picshoe.style.display = "none";
-    picbeauty.style.display = "none";
-    piccloth.style.display = "none";
-    picplace.style.display = "none";
+    picfood.forEach((food) => {
+        food.style.display = "block";
+    });
+    picbeauty.forEach((beauty) => {
+        beauty.style.display = "none";
+    });
+    piccloth.forEach((cloth) => {
+        cloth.style.display = "none";
+    });
+    picplace.forEach((place) => {
+        place.style.display = "none";
+    });
+    picshoe.forEach((shoe) => {
+        shoe.style.display = "none";
+    });
     console.log("foods");
 });
