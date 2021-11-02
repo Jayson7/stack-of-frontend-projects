@@ -63,5 +63,9 @@ li a {
     display: flex;
     text-shadow: 2px 2px rgb(29, 56, 211);
     align-items: center;
-    justify-content: center;
+    justify-content: right;
+}
+
+.logo h3 {
+    margin-right: 30px;
 }
