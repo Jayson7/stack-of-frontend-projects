@@ -35,7 +35,7 @@ ul {
 
 li {
     width: 60px;
-    text-align: center;
+    /* text-align: center; */
     background-color: #fff;
     list-style-type: none;
     border-radius: 5px;
@@ -55,6 +55,13 @@ li a {
 .logo {
     width: 100vw;
     background-color: rgb(17, 17, 8);
-    text-align: center;
-    color: rgb(18, 17, 68);
+    font-size: 1.3rem;
+    font-weight: 900;
+    /* text-align: center; */
+    color: rgb(255, 255, 255);
+    height: 4rem;
+    display: flex;
+    text-shadow: 2px 2px rgb(29, 56, 211);
+    align-items: center;
+    justify-content: center;
 }
