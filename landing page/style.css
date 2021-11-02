@@ -49,7 +49,11 @@ li a {
     text-decoration: none;
     font-weight: 900;
     font-size: 1.3rem;
-    color: rgb(29, 56, 211);
+    color: #ff6984;
+}
+
+li a i {
+    z-index: 3;
 }
 
 .logo {
@@ -61,11 +65,70 @@ li a {
     color: rgb(255, 255, 255);
     height: 4rem;
     display: flex;
-    text-shadow: 2px 2px rgb(29, 56, 211);
+    text-shadow: 2px 2px #ff6984;
     align-items: center;
     justify-content: right;
 }
 
 .logo h3 {
     margin-right: 30px;
+    z-index: 3;
+}
+
+section {
+    width: calc(100vw - 60px);
+    margin-left: 60px;
+    /* background-color: aqua; */
+    background: url("./1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    height: calc(100vh - 2rem);
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contain {
+    display: flex;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    height: 100vh;
+}
+
+.contain h1 {
+    font-size: 2.5rem;
+    color: #000;
+    text-transform: capitalize;
+    font-family: Tahoma;
+    font-weight: 900;
+}
+
+.contain p {
+    padding: 0 60px 0 60px;
+    font-weight: 500;
+    color: #000;
+}
+
+@media screen and (max-width: 600px) {
+    .contain p {
+        padding: 0px;
+    }
+}
+
+button {
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 10px;
+    background: #ff6984;
 }
