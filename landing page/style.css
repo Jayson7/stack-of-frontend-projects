@@ -3,7 +3,7 @@ body {
     padding: 0;
     scroll-behavior: smooth;
     overflow-x: hidden;
-    background: linear-gradient(to left, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 50%);
+    /* background: linear-gradient(to left, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 50%); */
     font-family: cursive;
 }
 
@@ -11,7 +11,50 @@ aside {
     display: flex;
     flex-direction: column;
     color: aliceblue;
+    /* background-color: rgb(2, 23, 139); */
     height: 100vh;
-    width: 100%;
+    width: 120px;
+    position: fixed;
+    left: 0;
+    top: 0;
     justify-content: space-between;
+}
+
+ul {
+    width: 60px;
+    /* border-radius: 20px; */
+    height: 100%;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    /* border-top-right-radius: 0; */
+    display: grid;
+    place-items: center;
+    background-color: rgb(17, 17, 8);
+    margin-left: -40px;
+}
+
+li {
+    width: 60px;
+    text-align: center;
+    background-color: #fff;
+    list-style-type: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+}
+
+li a {
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 1.3rem;
+    color: rgb(29, 56, 211);
+}
+
+.logo {
+    width: 100vw;
+    background-color: rgb(17, 17, 8);
+    text-align: center;
+    color: rgb(18, 17, 68);
 }
